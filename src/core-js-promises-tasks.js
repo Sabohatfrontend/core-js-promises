@@ -153,7 +153,6 @@ function queuPromises(promises) {
         return processPromise(index + 1);
       })
       .catch((error) => {
-        console.error('Error occurred:', error);
         return Promise.reject(error);
       });
   }
